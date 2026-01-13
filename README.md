@@ -1,21 +1,18 @@
-# NGS Pipeline (Up to Alignment & Variant Calling)
+# NGS Variant Calling Pipeline (Nextflow DSL2)
 
-This repository contains a basic single-end NGS pipeline.
+This repository contains a modular NGS variant calling pipeline built using Nextflow DSL2.
 
 ## Input files
-- Samplefile1.fastq
+- Sample1.fasta.fastq
+- chr22.fa
 
-## Reference genome
-- ref.fa (user-provided)
-
-## Steps performed
-1. Quality control using FastQC
-2. Alignment using BWA
-3. SAM to BAM conversion
-4. BAM sorting
-5. Variant calling (if applicable)
+## Steps
+1. Quality control (FastQC)
+2. Alignment to reference genome (BWA)
+3. SAM to BAM conversion and sorting (SAMtools)
+4. Variant calling (bcftools)
 
 ## How to run
-cd scripts
-./pipeline.sh
+```bash
+nextflow run main.nf
 
