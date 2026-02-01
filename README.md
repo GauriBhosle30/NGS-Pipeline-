@@ -60,7 +60,7 @@ NGS-Pipeline-/
 
 ---
 
-## ⚙️ Requirements
+##  Requirements
 
 | Tool | Version |
 |------|--------|
