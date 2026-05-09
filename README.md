@@ -1,4 +1,4 @@
-# NGS Pipeline — Nextflow DSL2
+# Variant Calling Pipeline using Nextflow 
 
 This repository contains a modular **single-end NGS variant calling pipeline** implemented using **Nextflow DSL2**.  
 The pipeline processes raw sequencing reads through quality control, trimming, alignment, and variant calling to identify **SNPs and small INDELs**.
